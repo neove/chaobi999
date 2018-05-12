@@ -108,7 +108,7 @@ class BasicLayout extends React.PureComponent {
       type: 'user/fetchCurrent',
     });
   }
-  componentWillUnmount(){
+  componentWillUnmount() {
     unenquireScreen(this.enquireHandler);
   }
   getPageTitle() {
@@ -184,7 +184,7 @@ class BasicLayout extends React.PureComponent {
     const bashRedirect = this.getBashRedirect();
     const layout = (
       <Layout>
-        <SiderMenu
+        {/* <SiderMenu
           logo={logo}
           // 不带Authorized参数的情况下如果没有权限,会强制跳到403界面
           // If you do not have the Authorized parameter
@@ -195,9 +195,9 @@ class BasicLayout extends React.PureComponent {
           location={location}
           isMobile={this.state.isMobile}
           onCollapse={this.handleMenuCollapse}
-        />
+        /> */}
         <Layout>
-          <Header style={{ padding: 0 }}>
+          {/* <Header style={{ padding: 0 }}>
             <GlobalHeader
               logo={logo}
               currentUser={currentUser}
@@ -210,7 +210,7 @@ class BasicLayout extends React.PureComponent {
               onMenuClick={this.handleMenuClick}
               onNoticeVisibleChange={this.handleNoticeVisibleChange}
             />
-          </Header>
+          </Header> */}
           <Content style={{ margin: '24px 24px 0', height: '100%' }}>
             <Switch>
               {redirectData.map(item => (
