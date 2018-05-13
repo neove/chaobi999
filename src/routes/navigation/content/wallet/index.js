@@ -1,9 +1,9 @@
 import React from 'react';
 import { Layout, Card, Row, Col, Avatar, Tooltip, Rate } from 'antd';
 const { Content } = Layout;
-import { exchange } from '../../../data';
-import style from './index.less';
-export default class Media extends React.Component {
+import { exchange } from '../../../../data';
+import style from '../index.less';
+export default class Wallet extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -17,7 +17,7 @@ export default class Media extends React.Component {
         <Content className={style.leftContent}>
           <Row>
             <Col span={24}>
-              <Card title="行情资讯" bordered={false} hoverable={true}>
+              <Card title="钱包" bordered={false} hoverable={true}>
                 {this.renderContent()}
               </Card>
             </Col>

@@ -44,15 +44,13 @@ export default class Exchange extends React.Component {
   render() {
     return (
       <Layout>
-        <Content className={style.content}>
           <Row>
-            <Col span={17}>
+            <Col span={24}>
               <Card title="交易所" bordered={false} hoverable={true}>
                 {this.renderContent()}
               </Card>
             </Col>
           </Row>
-        </Content>
       </Layout>
     );
   }
